@@ -89,13 +89,12 @@ h1{
 }
 
 #footer-div{
-    padding:20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #212121;
-    height: 25vh;
+    height: 33vh;   
     color: white;
 }
 #footer-div #gototop .fa-icon{
