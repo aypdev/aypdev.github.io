@@ -1,0 +1,128 @@
+html,body{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Arvo', serif;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: green;
+    
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+#navbar ul li{
+    margin: 20px;
+}
+
+#navbar ul li a{
+text-decoration: none;
+color: white;
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff3e0;
+    text-align: center;
+}
+h1{
+    margin-bottom: 0px;
+}
+.grid-container{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: #f3e5f5;  
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    
+}
+.projects-caption{  
+     grid-area: 1/1/2/3;
+     font-family: 'Fredericka the Great', cursive;
+     font-size: 1.25rem;          
+}
+.project-tile-caption{
+    font-family: 'Kameron', serif;
+}
+.project-tile .img-div img{
+    border: 1px solid black;
+    max-width: 100%;
+    height: auto;
+}
+ 
+#contact-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    height: 100vh;   
+    color: whitesmoke;
+    
+}
+
+#profile-link img{
+    max-width: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#footer-div{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    height: 25vh;
+    color: white;
+}
+#footer-div #gototop .fa-icon{
+    color: white;
+    
+}
+#footer-div #thanks{
+    text-align: center;
+}
+#footer-div #thanks a{
+    color: white;
+    
+}
+
+@media screen and (max-width:600px){
+    #navbar ul{
+    flex-direction: column;   
+    align-items: center;
+    }
+    #navbar ul li{
+        margin: 10px;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-tile{
+        padding-bottom: 30px;
+    }
+}
